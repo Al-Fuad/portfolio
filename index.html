@@ -7,7 +7,9 @@
     <title>Al-Fuad</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="/assets/me2.jpg">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <script src="https://kit.fontawesome.com/a500d21514.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
@@ -25,8 +27,8 @@
                 </ul>
                 <i class="fa-solid fa-bars" onclick="openMenu()"></i>
             </nav>
-            <div class="header-text">
-                <h2>Flutter Developer</h5>
+            <div class="header-text" data-aos="fade-right">
+                <h2>Flutter Developer</h2>
                     <h3>Hi, I'm <span>Nur</span><br>from Dhaka, Bangladesh.
                 </h2>
             </div>
@@ -38,10 +40,10 @@
     <div id="about">
         <div class="container">
             <div class="row">
-                <div class="about-col-1">
+                <div class="about-col-1" data-aos="fade-right">
                     <img src="assets/me2.jpg" alt="">
                 </div>
-                <div class="about-col-2">
+                <div class="about-col-2" data-aos="fade-left">
                     <h1 class="sub-title">About</h1>
                     <p>I am a motivated programmer and software engineer with a strong foundation in building scalable
                         and efficient software solutions. Proficient in
@@ -82,7 +84,7 @@
 
     <!-- ---------- Services ---------- -->
 
-    <div id="services">
+    <div id="services" data-aos="zoom-in">
         <div class="container">
             <h1 class="subtitle">
                 My Services
@@ -106,7 +108,7 @@
                 <div>
                     <i class="fa-brands fa-google-play"></i>
                     <i class="fa-brands fa-app-store-ios"></i>
-                    <h2>Deloyment</h2>
+                    <h2>Deployment</h2>
                     <p>Ready to launch? I help you publish and deploy your Flutter app seamlessly on both Google Play
                         Store & Apple App Store with proper configurations, testing, and optimization.</p>
                     <!-- <a href="#">learn more</a> -->
@@ -117,7 +119,7 @@
 
     <!-- ---------- Portfolio ---------- -->
 
-    <div id="portfolio">
+    <div id="portfolio" data-aos="zoom-in">
         <div class="container">
             <div class="sub-title">
                 My Work
@@ -166,7 +168,7 @@
     <div id="contact">
         <div class="container">
             <div class="row">
-                <div class="contact-left">
+                <div class="contact-left" data-aos="fade-right">
                     <h1 class="subtitle">Contact Me</h1>
                     <a href="mailto:alfuad.swe@gmail.com"><i class="fa-solid fa-paper-plane"></i>
                         alfuad.swe@gmail.com</a>
@@ -177,9 +179,9 @@
                         <a href="https://github.com/Al-Fuad"><i class="fa-brands fa-square-github"></i></a>
                     </div>
                     <a href="https://drive.google.com/file/d/1xlbcUBxGDs67qg3fP6pZA4EbcIAU3erb/view?usp=sharing"
-                        download class="btn btn2">Download Resume</a>
+                        download class="btn btn2"><i class="fa-solid fa-download"></i>  Download Resume</a>
                 </div>
-                <div class="contact-right">
+                <div class="contact-right" data-aos="fade-left">
                     <form name="submit-to-google-sheet">
                         <input type="text" name="Name" placeholder="Your Name" required>
                         <input type="email" name="Email" placeholder="Your Email" required>
@@ -249,6 +251,12 @@
                     form.reset()
                 })
         })
+    </script>
+    <script>
+        AOS.init({
+            duration: 1000, // Animation duration in milliseconds
+            once: true, // Ensures animations only happen once
+        });
     </script>
 </body>
 
